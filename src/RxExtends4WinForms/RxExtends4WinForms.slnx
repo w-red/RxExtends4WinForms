@@ -3,5 +3,6 @@
     <File Path="../../.editorconfig" />
     <File Path="../../README.md" />
   </Folder>
+  <Project Path="../../test/RxExtends4WinFormsTest/RxExtends4WinFormsTest.csproj" Id="6e9b7bab-cddc-4be5-b6b2-c253544ca239" />
   <Project Path="RxExtends4WinForms.csproj" />
 </Solution>

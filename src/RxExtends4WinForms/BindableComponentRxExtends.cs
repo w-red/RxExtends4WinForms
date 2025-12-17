@@ -1,0 +1,25 @@
+﻿using System.Reactive.Linq;
+
+namespace RxExtends4WinForms;
+
+#if !NET7_0_OR_GREATER
+#pragma warning disable CS1574
+#endif
+/// <summary><see cref="System.Reactive"/>'s extensions for <see cref="BindableComponent"/></summary>
+#if !NET7_0_OR_GREATER
+#pragma warning restore CS1574
+#endif
+public static class BindableComponentRxExtends
+{
+#if NET7_0_OR_GREATER
+    extension(BindableComponent bc)
+    {
+        /// <summary><see cref="BindableComponent.BindingContextChanged"/> as <see cref="Observable"/></summary>
+        public IObservable<EventArgs> BindingContextChangedAsObservable() =>
+            Observable.FromEvent<EventHandler, EventArgs>(
+                h => (s, e) => h(e),
+                h => bc.BindingContextChanged += h,
+                h => bc.BindingContextChanged -= h);
+    }
+#endif
+}

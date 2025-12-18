@@ -6,6 +6,7 @@
 	  <Nullable>enable</Nullable>
 	  <UseWindowsForms>true</UseWindowsForms>
 	  <LangVersion>latest</LangVersion>
+	  <AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
 
   <ItemGroup>

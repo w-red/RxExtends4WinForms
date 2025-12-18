@@ -99,7 +99,6 @@ public static class ControlRxExtends
                 h => ctrl.CursorChanged += h,
                 h => ctrl.CursorChanged -= h);
 
-
 #if NET7_0_OR_GREATER
         /// <summary><see cref="Control.DataContextChanged"/> as <see cref="Observable"/></summary>
         public IObservable<EventArgs> DataContextChangedAsObservable() =>
@@ -115,7 +114,6 @@ public static class ControlRxExtends
                 h => (s, e) => h(e),
                 h => ctrl.DockChanged += h,
                 h => ctrl.DockChanged -= h);
-
 
         /// <summary><see cref="Control.DpiChangedAfterParent"/> as <see cref="Observable"/></summary>
         public IObservable<EventArgs> DpiChangedAfterParentAsObservable() =>

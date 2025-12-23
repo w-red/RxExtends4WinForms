@@ -7,7 +7,39 @@
 	  <UseWindowsForms>true</UseWindowsForms>
 	  <LangVersion>latest</LangVersion>
 	  <AnalysisLevel>latest</AnalysisLevel>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Title>RxExtends4WinForms</Title>
+	  <Authors>w-red TERASHI, yohei</Authors>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageIcon>w-red.png</PackageIcon>
+	  <RepositoryUrl>https://github.com/w-red/RxExtends4WinForms</RepositoryUrl>
+	  <PackageTags>Rx; Reactive Extensions; WinForms; Windows;</PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageProjectUrl>https://github.com/w-red/RxExtends4WinForms</PackageProjectUrl>
+	  <Copyright>Copyright (c) .NET Foundation and Contributors.  Modified by w-red TERASHI yohei (c) 2025.</Copyright>
+	  <Description>Reactive Extensions's IObservable object from 'whole' WinForms events.</Description>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-windows|AnyCPU'">
+    <WarningLevel>8</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-windows|AnyCPU'">
+    <WarningLevel>8</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\w-red.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
 	  <PackageReference Include="PolySharp" Version="1.15.0">

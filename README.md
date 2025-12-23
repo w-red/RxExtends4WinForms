@@ -42,7 +42,7 @@ For any questions or suggestions, please open an issue on the GitHub repository.
 
 ## Acknowledgements
 
-Special thanks to dotnet team [Rx.NET](https://github.com/dotnet/reactive) contributors.
+Special thanks to .NET Foundation and [Rx.NET](https://github.com/dotnet/reactive) contributors.
 
 Thanks to all the contributors and users who help improve this project!
 

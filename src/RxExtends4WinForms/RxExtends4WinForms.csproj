@@ -20,6 +20,9 @@
 	  <PackageProjectUrl>https://github.com/w-red/RxExtends4WinForms</PackageProjectUrl>
 	  <Copyright>Copyright (c) .NET Foundation and Contributors.  Modified by w-red TERASHI yohei (c) 2025.</Copyright>
 	  <Description>Reactive Extensions's IObservable object from 'whole' WinForms events.</Description>
+	  <AssemblyVersion>0.1.0.0</AssemblyVersion>
+	  <FileVersion>0.1.0.0</FileVersion>
+	  <Version>0.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-windows|AnyCPU'">

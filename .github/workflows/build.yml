@@ -26,7 +26,7 @@ jobs:
           dotnet-version: "10.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore RxExtends4WinForms.sln
+        run: dotnet restore src/RxExtends4WinForms/src/RxExtends4WinForms/RxExtends4WinForms.slnxx
 
       - name: Build (Release)
-        run: dotnet build RxExtends4WinForms.sln --configuration Release --no-restore
+        run: dotnet build src/RxExtends4WinForms/src/RxExtends4WinForms/RxExtends4WinForms.slnxx --configuration Release --no-restore

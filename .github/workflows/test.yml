@@ -31,13 +31,13 @@ jobs:
           dotnet-version: "10.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore RxExtends4WinForms.sln
+        run: dotnet restore src/RxExtends4WinForms/RxExtends4WinForms.slnx
 
       - name: Build test project
-        run: dotnet build tests/RxExtends4WinFormsTest/RxExtends4WinFormsTest.csproj --configuration Release --no-restore
+        run: dotnet build test/RxExtends4WinFormsTest/RxExtends4WinFormsTest.csproj --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test tests/RxExtends4WinFormsTest/RxExtends4WinFormsTest.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" --collect:"XPlat Code Coverage"
+        run: dotnet test test/RxExtends4WinFormsTest/RxExtends4WinFormsTest.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" --collect:"XPlat Code Coverage"
 
       - name: Upload test results
         uses: actions/upload-artifact@v4

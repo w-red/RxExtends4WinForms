@@ -56,13 +56,13 @@ jobs:
           echo "Version: $version"
 
       - name: Restore dependencies
-        run: dotnet restore RxExtends4WinForms.sln
+        run: dotnet restore src/RxExtends4WinForms/RxExtends4WinForms.slnx
 
       - name: Build
-        run: dotnet build RxExtends4WinForms.sln --configuration Release --no-restore
+        run: dotnet build src/RxExtends4WinForms/RxExtends4WinForms.slnx --configuration Release --no-restore
 
       - name: Create NuGet package
-        run: dotnet pack src/RxExtends4WinForms.csproj --configuration Release --no-build --output packages /p:PackageVersion=${{ steps.get_version.outputs.VERSION }}
+        run: dotnet pack src/RxExtends4WinForms/RxExtends4WinForms.csproj --configuration Release --no-build --output packages /p:PackageVersion=${{ steps.get_version.outputs.VERSION }}
 
       - name: List created packages
         shell: pwsh

@@ -6,10 +6,10 @@ This project is the [Reactive Extensions](https://github.com/dotnet/reactive) ex
 
 ## How to use
 
-Add the NuGet package to your project.
+Add the [NuGet package](https://www.nuget.org/packages/RxExtends4WinForms/) to your project.
 
 ```shell
- dotnet add package R3Extends4WinForms
+ dotnet add package RxExtends4WinForms
 ```
 
 You can also add it via the NuGet Package Manager in Visual Studio.

@@ -4,7 +4,13 @@ using System.Reactive.Linq;
 
 namespace RxExtends4WinForms;
 
+#if !NET5_0_OR_GREATER
+#pragma warning disable CS1574
+#endif
 /// <summary><see cref="System.Reactive"/>'s Extends for <see cref="TaskDialogRadioButton"/>.</summary>
+#if !NET5_0_OR_GREATER
+#pragma warning restore CS1574
+#endif
 public static class TaskDialogRadioButtonRxExtends
 {
 #if NET5_0_OR_GREATER

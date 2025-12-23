@@ -4,8 +4,14 @@ using System.Reactive.Linq;
 
 namespace RxExtends4WinForms;
 
-/// <summary><see cref="System.Reactive"/>'s extensions for <see cref="BindableComponent"/></summary>
+#if !NET7_0_OR_GREATER
+#pragma warning disable CS1574
+#endif
+/// <summary><see cref="System.Reactive"/>'s extensions for <see cref="System.Windows.Forms.BindableComponent"/></summary>
 public static class BindableComponentRxExtends
+#if !NET7_0_OR_GREATER
+#pragma warning restore CS1574
+#endif
 {
 #if NET7_0_OR_GREATER
     extension(BindableComponent bc)
